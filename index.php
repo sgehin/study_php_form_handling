@@ -21,7 +21,9 @@
                         <option selected="selected" value="Broccoli">Broccoli</option> <!-- selected set default selected item -->                      
                         </select> 
 
-                          <input type="submit" name="submit">
+                          <input type="submit" name="submit" value="xxx"> <!-- customize text in button -->
+
+                          <input type="image" width="75px" height="20px" name="submit" src="img/AAA.png"> <!-- customize text in button -->
               </label>
         </pre>
     </form>
