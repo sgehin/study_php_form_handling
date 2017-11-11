@@ -11,6 +11,14 @@
                  green <input type="radio" name="color" value="3" checked="checked">
 
                           <input type="submit" name="submit">
+<!-- hidden fields 
+  echo '<input type="hidden" name="submitted" value="yes">'
+
+to check:
+
+if(isset($_post['submitted'])){}
+-->
+
     </form>
            
 </html>
