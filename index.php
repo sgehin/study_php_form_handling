@@ -5,20 +5,25 @@
         
     </head>
     <form method="post" action="calc.php">
-        <pre>
-                 yello <input type="radio" name="color" value="1">
-                   red <input type="radio" name="color" value="2">
-                 green <input type="radio" name="color" value="3" checked="checked">
+        <pre><label>
+             Vegetables <select name="veg"size="1">    <!-- size = number of line to display -->
+                        <option value="Peas">Peas</option>
+                        <option value="Carrots">Carrots</option>
+                        <option selected="selected" value="Broccoli">Broccoli</option> <!-- selected set default selected item -->                      
+                        </select> 
 
                           <input type="submit" name="submit">
-<!-- hidden fields 
-  echo '<input type="hidden" name="submitted" value="yes">'
 
-to check:
+<!-- allowing to select multiple choices-->
+    Multiple Vegetables <select name="veg"size="3" multiple="multiple">    <!-- add attribute multiple -->
+                        <option value="Peas">Peas</option>
+                        <option value="Carrots">Carrots</option>
+                        <option selected="selected" value="Broccoli">Broccoli</option> <!-- selected set default selected item -->                      
+                        </select> 
 
-if(isset($_post['submitted'])){}
--->
-
+                          <input type="submit" name="submit">
+              </label>
+        </pre>
     </form>
            
 </html>
