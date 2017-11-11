@@ -5,14 +5,18 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php // formtest.php
+if (isset($_post['name'])) $name = $_post['name'];
+else $name = "(Not entered)";
+
 echo <<<_END
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>index</title>
     </head>
     <body>
-        <form action="formtest.php" method="post">
+        Your name is: $name<br>
+        <form action=formtest.php method="post">
             what is your name?
             <input type="text" name="name">
             <input type="submit">
@@ -22,3 +26,6 @@ echo <<<_END
 _END;
 ?>
 
+<!--//if(true){}else{}
+
+//if () $name=jojo; else$name="(not jojo)"
