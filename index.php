@@ -8,11 +8,15 @@
         <pre>
                   Remarks <textarea name="principle" cols="21" rows="4" wrap="type">type your question here.</textarea>
 
-        Monthly Repayment <input type="text" name="monthly">
+                  I agree <input type="checkbox" name="agree" value="value" checked="checked">  <!--default checked setting -->
+              don't agree <input type="checkbox" name="dontAgree">  <!--no default checked setting -->
 
-          Number of Years <input type="text" name="years" value="25">
+        <!-- Submitting multiple values with an array :add [] to name all choice are submitted--> 
 
-            Interest Rate <input type="text" name="rate" value="6">
+                  Vanilla <input type="checkbox" name="ice[]">
+                Chocolate <input type="checkbox" name="ice[]">
+               Strawberry <input type="checkbox" name="ice[]">
+        <!-- To substrac the array use: foreach($ice as $item) echo "$item<br>";--> 
 
                           <input type="submit" name="submit">
     </form>
